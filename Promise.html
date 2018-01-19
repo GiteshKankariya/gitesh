@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    var isMomHappy = true;
+
+// Promise
+var willIGetNewPhone = new Promise(
+  function (resolve, reject)
+  {
+      if (isMomHappy)
+       {
+          var phone ='samsung';
+          resolve(phone); // fulfilled
+          console.log(phone.brand);
+      }
+       else
+        {
+          var reason = new Error('mom is not happy');
+          reject(reason); // reject
+          console.log(reject);
+      }
+
+  }
+);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
